@@ -9,7 +9,7 @@ function [ optmom ] = optimummomentum_lcmv_sekihara2015( C,lfm,EEG,pos,vol,moman
 % vol is simbio vol
 parameter1=lfm'*(inv(C))*lfm;
 parameter2=lfm'*lfm;
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%define optimum direction with eigen value
+%% define optimum direction with eigen value%%%
 [eigv,eigval]=eig(parameter1);
 for i=1:size(eigval,1);eigvalue(1,i)=eigval(i,i);end
 a=find(eigvalue==min(eigvalue));
