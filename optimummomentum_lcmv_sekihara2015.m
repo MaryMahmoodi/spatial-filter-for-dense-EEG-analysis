@@ -50,25 +50,9 @@ else
 
 end
 %%now find optmom.Wlcmv and  optmom.NAIlcmv for pos1 and mom1
-if 0
-grad=[];
-dip2.pos=pos;
-dip2.ori=optmom.mom;
-dip2.inside=1;dip2.outside=[];
 
-dip2.leadfield{1,1}=lfm;
-dipout1 = beamformer_lcmv(dip2, grad, vol, EEG, C,'lambda',1,'powmethod','trace','feedback','text','fixedori' ,'no','projectnoise' ,'yes','projectmom','yes','keepfilter' ,'yes','keepleadfield','yes','keepmom','yes','keepcov','yes', 'reducerank' ,'no'  );
-optmom.Wlcmv=dipout1.filter{1,1}';
-optmom.NAIlcmv=abs(optmom.Wlcmv'*C*optmom.Wlcmv);
 
-% figure;plot(optmom.Wlcmv'*EEG)
 %try with momanatomy
-dip2.ori=momanatomy;
-dipout1 = beamformer_lcmv(dip2, grad, vol, EEG, C,'lambda',1,'powmethod','trace','feedback','text','fixedori' ,'no','projectnoise' ,'yes','projectmom','yes','keepfilter' ,'yes','keepleadfield','yes','keepmom','yes','keepcov','yes', 'reducerank' ,'no'  );
-optmom.Wlcmvanatomy=dipout1.filter{1,1}';
-optmom.NAIlcmvanatomy=abs(optmom.Wlcmv'*C*optmom.Wlcmv);
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-end%if 0
 l=lfm*momanatomy;
       l=l/norm(l);
 W=(inv(C)*l)/(l'*inv(C)*l);
