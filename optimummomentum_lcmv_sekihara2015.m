@@ -49,7 +49,7 @@ else
  optmom.NAI=abs(1/landa_param2);
 
 end
-%%now find optmom.Wlcmv and  optmom.NAIlcmv for pos1 and mom1
+
 
 
 %try with momanatomy
