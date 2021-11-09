@@ -1,4 +1,4 @@
-function [ optmom ] = optimummomentum_lcmv_sekihara2015( C,lfm,EEG,pos,vol,momanatomy)
+function [ optmom ] = optimummomentum_lcmv_sekihara2015( C,lfm,EEG,pos,momanatomy)
 %it gets leadfieldmatrix(lfm)for a point in space and also covariance
 %matrix (C) of the EEG data matrix in a trial or epoch and gives the best momentum for the
 %source of that place also the neural activity index
@@ -6,9 +6,9 @@ function [ optmom ] = optimummomentum_lcmv_sekihara2015( C,lfm,EEG,pos,vol,moman
 % This is according to sekihara book 2015 for lcmv beamformer
 %and by this optimum orientation used in lcmv of fieldtrip we try it
 %besides  this one to get an other NAI and weight vector for EEG
-% vol is simbio vol; volume conductor model from simbio finite element model, it is only used in beamformer_lcmv.m 
 % momanatomy: facenormal direction on each source location on the brain surface
-%%
+
+%% main 
 parameter1=lfm'*(inv(C))*lfm;
 parameter2=lfm'*lfm;
 %% define optimum direction with eigen value%%%
