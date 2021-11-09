@@ -14,6 +14,6 @@ the activity of radial and tangential neural sources.
 
 Also, the function optimummomentum_lcmv_sekihara2015.m applies an optimization to the lcmv beamformer in order to acquire the optimum dipole source direction from any brain location,
 
-Then, the source signal is extracted by applying the lcmv beamformer to the surface spatial filtered EEG in the optum direction with maximum source power.
+Then, the source signal is extracted by applying the lcmv beamformer to the surface spatial filtered EEG in the optimum direction with maximum source power.
 
 
