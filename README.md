@@ -12,7 +12,7 @@ The output matrix, applied to the EEG, will distinctively increase the sensitivi
 the activity of radial and tangential neural sources.
 
 
-Also, the function optimummomentum_lcmv_sekihara2015.m applies an optimization to the lcmv beamformer in order to acquire the optimum dipole source direction from any brain location,
+Also, the function optimummomentum_lcmv_sekihara2015.m applies an optimization to the lcmv beamformer in order to acquire the optimum dipole source direction from any brain location. written according to the book entitled "electromagnetic brain imaging", also "adaptive spatial filters for electromagnetic brain imaging" by  Sekihara et.al. 
 
 Then, the source signal is extracted by applying the lcmv beamformer to the surface spatial filtered EEG in the optimum direction with maximum source power.
 
