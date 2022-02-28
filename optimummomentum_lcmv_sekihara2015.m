@@ -1,6 +1,6 @@
-function [ optmom ] = optimummomentum_lcmv_sekihara2015( C,lfm,EEG,pos,momanatomy)
+function [ optmom ] = optimummomentum_lcmv_sekihara2015( C,lfm,pos,momanatomy)
 %it gets leadfieldmatrix(lfm:num_electrodes x 3)for a point in space and also covariance
-%matrix (C) of the EEG data matrix in a trial or epoch and gives the best momentum, weight, 
+%matrix (C= EEG * EEG') of the EEG data matrix in a trial or epoch and gives the best momentum, weight, 
 % and the neural activity index for the source on that place
 % OUTPUT:
 %optmom.mom 
