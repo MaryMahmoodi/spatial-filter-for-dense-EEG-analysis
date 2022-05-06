@@ -1,16 +1,19 @@
 %scalpef.m ? Spline estimation of the components of the scalp Electric Field
- %
+ 
  % Usage: [Et,Ep,L,S] = scalpef( locs , m , lambda );
- %
+ 
+
  % Required Inputs:
  % locs = sensor locations in Cartesian coordinates ([X Y Z])
  % m = interpolation order (small integer larger than 2)
  % lambda = smoothing parameter
- %
+ 
+
  % Output:
  % Et, Ep, L = spherical components of the tangential electric field and the surface Laplacian
  % S = smoothing matrix
- %
+ 
+
  % Author: Claudio G. Carvalhaes, May 01, 2013
  %
 
