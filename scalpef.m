@@ -7,7 +7,8 @@
  % locs = sensor locations in Cartesian coordinates ([X Y Z])
  % m = interpolation order (small integer larger than 2)
  % lambda = smoothing parameter
- 
+ %example [Et,Ep,L,S] = scalpef( elec.chanpos , 3 , 0.1); EEG_L=L*EEG;
+
 
  % Output:
  % Et, Ep, L = spherical components of the tangential electric field and the surface Laplacian
