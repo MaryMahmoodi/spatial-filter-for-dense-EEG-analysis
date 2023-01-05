@@ -44,8 +44,11 @@ if landa_param1<landa_param2
     optmom.W=(inv(C)* (optmom.l))/( (optmom.l)'*inv(C)* (optmom.l));
 optmom.NAI=trace((optmom.W)'*(C)*optmom.W)%landa_param1;
  optmom.NAI=abs(1/landa_param1);
+ 
 
 else
+
+
     optmom.mom=real(eigvector_param2);
 % % % %         optmom.mom=mom1;
 
