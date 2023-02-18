@@ -16,7 +16,7 @@
  
 
  % Author: Claudio G. Carvalhaes, May 01, 2013
- %
+ % The joint use of the tangential electric field and surface Laplacian in EEG classification
 
 function [Et,Ep,L,S] = scalpef( locs , m , lambda)% , data , channels )
 
